@@ -1,0 +1,237 @@
+@font-face {
+	font-family: 'AvalonDemi';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Avalon-Demi-webfont.eot");
+	src: url("../fonts/Avalon-Demi-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/Avalon-Demi-webfont.woff") format("woff"),url("../fonts/Avalon-Demi-webfont.ttf") format("truetype"),url("../fonts/Avalon-Demi-webfont.svg#avalonbold") format("svg");
+}
+
+@font-face {
+	font-family: 'AvalonBook';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Avalon-Book-webfont.eot");
+	src: url("../fonts/Avalon-Book-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/Avalon-Book-webfont.woff") format("woff"),url("../fonts/Avalon-Book-webfont.ttf") format("truetype"),url("../fonts/Avalon-Book-webfont.svg#avalonregular") format("svg");
+}
+
+body {
+  font-family: "AvalonBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  background-color: #000033;
+}
+
+.slogan {
+  font-family: "AvalonDemi";
+  border-left: 10px solid #E20031;
+  padding-left: 20px;
+  font-size: 96px;
+}
+
+.slogan span {
+  display: block;
+  line-height: 74px;
+}
+
+.slogan span.motto {
+  color: #E20031;
+}
+
+.slogan p.location {
+  font-size: 24px;
+  padding-top: 5px;
+}
+
+.jumbotron {
+  margin-top: 120px;
+  height: 335px;
+}
+
+.jumbotron h1.logo {
+  font: 0/0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background: url("../images/rupy-2013-logo-1.png") no-repeat center top; 
+}
+
+.jumbotron h1.logo, .slogan {
+  height: 100%;
+}
+
+.masthead-links {
+  padding-top: 50px;
+  margin: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+.masthead-links li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.masthead-links li:first-child {
+  padding-left: 0;
+}
+
+.masthead-links li:first-child:after {
+  content: ':';
+}
+
+.masthead-links li a {
+  color: #E20031;
+}
+
+@media (min-width: 1200px) {
+  .jumbotron {
+    height: 440px;
+  }
+
+  .slogan {
+    font-size: 120px;
+    padding-left: 25px;
+  }
+
+  .slogan span {
+    line-height: 96px;
+  }
+
+  .slogan p.location {
+    font-size: 38px;
+    padding-top: 18px;
+  }
+
+  .jumbotron h1.logo {
+    background-image: url("../images/rupy-2013-logo-2.png"); 
+  }
+
+  .masthead-links {
+    padding-top: 70px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 979px) {
+  .jumbotron {
+    margin-top: 100px;
+    height: auto;
+  }
+
+  .slogan, .jumbotron h1.logo {
+    float: none;    
+    width: 100%;
+  }
+
+  .slogan {
+    font-size: 32px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .slogan span {
+    display: inline;
+    line-height: 30px;
+  }
+
+  .slogan span.motto {
+    display: block;
+  }
+
+  .slogan p.location {
+    margin-top: 80px;
+    font-size: 24px;
+  }
+
+  .jumbotron h1.logo {
+    height: 435px;
+    background-image: url("../images/rupy-2013-logo-2.png");
+  }
+
+  .offset4 {
+    margin-left: 0;
+  }
+
+  .masthead-links {
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .masthead-links li:first-child {
+    display: block;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .masthead-links li:first-child:after {
+    content: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .jumbotron {
+    margin-top: 50px;
+  }
+
+  .slogan {
+    font-size: 28px;
+  }
+
+  .slogan span {
+    line-height: 26px;
+  }
+
+  .slogan p.location {
+    margin-top: 45px;
+    font-size: 22px;
+  }
+
+  .jumbotron h1.logo {
+    height: 340px;
+    background-image: url("../images/rupy-2013-logo-3.png");
+  }
+
+  .masthead-links {
+    padding-top: 35px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    min-height: 480px;
+  }
+
+  .jumbotron {
+    margin-top: 20px;
+  }
+
+  .slogan {
+    font-size: 20px;
+  }
+
+  .slogan span {
+    line-height: 18px;
+  }
+
+  .slogan p.location {
+    margin-top: 25px;
+    font-size: 18px;
+  }
+
+  .jumbotron h1.logo {
+    height: 185px;
+    background-image: url("../images/rupy-2013-logo-5.png");
+  }
+
+  .masthead-links {
+    padding-top: 15px;
+    font-size: 16px;
+  }
+
+  .masthead-links li:first-child {
+    margin-bottom: 10px;
+  }
+}
