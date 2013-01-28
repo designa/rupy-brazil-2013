@@ -319,15 +319,15 @@ body {
   }
 
   .jumbotron {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .slogan {
-    font-size: 19.5px;
+    font-size: 19.8px;
   }
 
   .slogan span {
-    line-height: 19.5px;
+    line-height: 20px;
   }
 
   .slogan p.location {
@@ -335,7 +335,7 @@ body {
   }
 
   .jumbotron h1.logo {
-    height: 235px;
+    height: 241px;
     background-image: url("../images/rupy-2013-logo-4.png");
   }
 
