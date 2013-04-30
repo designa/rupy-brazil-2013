@@ -1,4 +1,4 @@
-How to publish website on Github Pages?
----------------------------------------
+rupybrazil2013
+==============
 
-Commit your changes and perform `git push --mirror` instead of classic `git push`
+Site do evento RuPy Brazil 2013.
