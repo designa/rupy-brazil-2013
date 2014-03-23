@@ -1,33 +1,40 @@
-require 'capistrano_colors'
-#require 'bundler/capistrano'
+set :application, 'rupybrazil2013'
+set :repo_url, 'git@github.com:designa/13.rupy.com.br.git'
 
-# Configurando o servidor
-set :domain, "rupy.com.br"
-set :application, "rupybrazil2013"
-set :user, "railsapps"
-set :use_sudo, false
-set :deploy_to, "/home/#{user}/#{application}"
+# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-# Configurando o repositório
-server domain, :app, :web, :db, :primary => true
-set :repository,  "git@github.com:designa/rupybrazil2013.git"
+set :deploy_to, "/home/railsapps/#{fetch(:application)}"
 set :scm, :git
+
+# set :format, :pretty
+# set :log_level, :debug
+# set :pty, true
+
+# set :linked_files, %w{config/database.yml}
+# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+
+# set :default_env, { path: "/opt/ruby/bin:$PATH" }
 set :keep_releases, 5
-ssh_options[:forward_agent] = false
-set :normalize_asset_timestamps, false
 
-# Deploy
 namespace :deploy do
-  task :start do
-    run "sudo /etc/init.d/apache2 start"
+
+  desc 'Restart application'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      # Your restart mechanism here, for example:
+      execute :sudo, '/etc/init.d/apache2 restart'
+    end
   end
 
-  task :stop do
-    run "sudo /etc/init.d/apache2 stop"
-  end
+  # after :restart, :clear_cache do
+  #   on roles(:web), in: :groups, limit: 3, wait: 10 do
+  #     # Here we can do anything such as:
+  #     # within release_path do
+  #     #   execute :rake, 'cache:clear'
+  #     # end
+  #   end
+  # end
 
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-    run "sudo /etc/init.d/apache2 restart"
-  end
+  # after :finishing, 'deploy:cleanup'
+
 end

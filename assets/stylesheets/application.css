@@ -1,0 +1,798 @@
+@font-face {
+  font-family: 'FuturaBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/futura_bold_bt-webfont.eot");
+  src: url("../fonts/futura_bold_bt-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/futura_bold_bt-webfont.woff") format("woff"),url("../fonts/futura_bold_bt-webfont.ttf") format("truetype"),url("../fonts/futura_bold_bt-webfont.svg#avalonbold") format("svg");
+}
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'social-rupy';
+  src:url('../fonts/social-rupy.eot');
+  src:url('../fonts/social-rupy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/social-rupy.woff') format('woff'),
+    url('../fonts/social-rupy.ttf') format('truetype'),
+    url('../fonts/social-rupy.svg#social-rupy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'talk';
+  src:url('../fonts/talk.eot');
+  src:url('../fonts/talk.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/talk.ttf') format('truetype'),
+    url('../fonts/talk.woff') format('woff'),
+    url('../fonts/talk.svg#talk') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+a {
+  color: #35AEE7;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+dt {
+  margin-bottom: 4px;
+}
+dd {
+  margin-bottom: 12px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.link-fanpage {
+  color: #F1F45F;
+}
+.link-fanpage:hover {
+  color: #CCCC28;
+  text-decoration: none;
+}
+.btn-last-change {
+  display: block;
+  font-size: 1.4em;
+  padding: 1em;
+  background: #FF0000;
+  color: #ffffff;
+}
+.btn-last-change:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.is-shadow {
+  text-shadow: 0 1px 1px #222;
+}
+#first-content {
+  padding-bottom: 60px;
+  background: #35AEE7;
+  background: -moz-linear-gradient(top,  #35AEE7 0%, #6A4195 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#35AEE7), color-stop(100%,#6A4195));
+  background: -webkit-linear-gradient(top,  #35AEE7 0%,#6A4195 100%);
+  background: -o-linear-gradient(top,  #35AEE7 0%,#6A4195 100%);
+  background: -ms-linear-gradient(top,  #35AEE7 0%,#6A4195 100%);
+  background: linear-gradient(to bottom,  #35AEE7 0%,#6A4195 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35AEE7', endColorstr='#6A4195',GradientType=0 );
+}
+
+.slogan {
+  font-family: "FuturaBold";
+  padding-left: 20px;
+  font-size: 90px;
+  text-align: center;
+}
+
+.slogan span {
+  display: block;
+  line-height: 80px;
+}
+
+.slogan span.motto {
+  color: #363636;
+  margin: 28px 0;
+}
+
+.slogan p.location {
+  font-size: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.jumbotron {
+  padding-top: 50px;
+}
+
+.jumbotron h1.logo {
+  font: 0/0;
+  color: transparent;
+  text-shadow: none;
+  margin: 0;
+  padding: 0;
+  background: url("../images/logo-rupy.png") no-repeat center;
+  background-size: contain;
+}
+
+.jumbotron h1.logo, .slogan {
+  height: 255px;
+}
+.link-papers {
+  color: #fbfbfb;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.link-papers:hover {
+  color:#ccc;
+}
+.photo {
+  border: 5px solid #fbfbfb;
+}
+.link-photo {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.link-photo:hover {
+  opacity: 0.4;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.name-center {
+  text-align: center;
+  width: 75px;
+}
+.link-team {
+  color: #fff;
+}
+.link-team:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#speaker-area .speakers-confirmed {
+  margin: 0 0 20px 0;
+}
+/*.speakers-confirmed {
+  color:#363636;
+}*/
+#speaker-area .row-fluid {
+  margin-bottom: 24px;
+}
+#speaker-area .speakers-item {
+  padding: 16px;
+}
+#speaker-area .speakers-item:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+#speaker-area .speaker-photo,
+#speaker-area .speaker-photo .photo {
+  display: block;
+  height: 170px;
+  width: 170px;
+}
+#speaker-area .speaker-photo {
+  float: left;
+  margin: 0 30px 0 0;
+}
+.speakers-name {
+  margin: 0;
+  margin-top: 36px;
+}
+.link-speaker{
+  color: red;
+  background: #fbfbfb;
+  padding: 5px;
+}
+.speakers-works-for {
+  color: #7f8c8d;
+  background: #fbfbfb;
+  padding: 7px;
+}
+.speakers-room {
+  color: #d35400;
+  background: #fbfbfb;
+  padding: 7px;
+  margin-left: -4px;
+}
+.speakers-bio {
+ /* color: #34495E;*/
+ color:#fbfbfb;
+}
+.icon-github, .icon-twitter, .icon-earth {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  background: #fbfbfb;
+  font-size: 2em;
+  width: 40px;
+  height: 35px;
+  border-radius: 50%;
+  float: left;
+  text-align: center;
+  margin-right: 5px;
+  padding-top: 3px;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-github:before {
+  content: "\e005";
+}
+.icon-twitter:before {
+  content: "\e000";
+}
+.icon-earth:before {
+  content: "\e002";
+}
+.talks-content {
+  float: left;
+  background: #fbfbfb;
+  width: 84%;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 112px;
+}
+
+
+[class^="talk-"], [class*=" talk-"] {
+  font-family: 'talk';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #35AEE7;
+  font-size: 2.8em;
+  width: 70px;
+  float: left;
+  margin-right: 5px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.talk-camera:before {
+  content: "\e601";
+}
+.talk-image:before {
+  content: "\e602";
+}
+
+
+#schedule-of-speakers table {
+  background: #fff;
+  color: #333;
+}
+#schedule-of-speakers th {
+  font-size: 22px;
+}
+
+#schedule-of-speakers td,
+#schedule-of-speakers th {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 20px 30px;
+  position: relative;
+  text-align: center;
+}
+#schedule-of-speakers tbody tr:nth-child(2n+1) {
+  background: #f6f6f6;
+}
+#schedule-of-speakers tbody tr:hover {
+  background:#fffde1;
+}
+#schedule-of-speakers .speaker-photo {
+  float: left;
+  height: 40px;
+  margin-right: 20px;
+  position: relative;
+  width: 40px;
+}
+#schedule-of-speakers .schedule-room1 {
+  background-color: #f1c40f;
+}
+#schedule-of-speakers tbody .schedule-room1:hover {
+  background-color: #f1d35d;
+}
+#schedule-of-speakers .schedule-room2 {
+  background-color: #3498db;
+}
+#schedule-of-speakers tbody .schedule-room2:hover {
+  background-color: #68b2e3;
+}
+#schedule-of-speakers .schedule-room3 {
+  background-color: #1abc9c;
+}
+#schedule-of-speakers tbody .schedule-room3:hover {
+  background-color: #54d6bc;
+}
+#schedule-of-speakers .schedule-time {
+  font-size: 14px;
+  width: 40px;
+}
+
+
+.event-photo{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#about-event {
+  background-size: contain;
+}
+
+#info-box .container,
+#location .container{
+  background: #fff;
+  border-bottom: 10px solid #6A4195;
+  color: #666;
+}
+
+#location .container {
+  padding: 0;
+}
+
+#info-box .container .span12,
+#location .about-event-infos {
+  padding: 20px;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#info-box .container h3,
+#newsletter .container h3,
+#location .container h3 {
+  color: #000;
+}
+
+.icon-rupy-facebook, .icon-rupy-twitter {
+  font-family: 'social-rupy';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 3em;
+    float: left;
+  text-align: center;
+  margin-right: 5px;
+  padding-top: 3px;
+  width: 50px;
+}
+.icon-rupy-facebook:before {
+  content: "\e001";
+}
+.icon-rupy-twitter:before {
+  content: "\e000";
+}
+
+#newsletter form {
+  margin: 0;
+}
+
+#newsletter #input-newsletter-email,
+#newsletter .btn-success {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+#newsletter #input-newsletter-email{
+  background: #e8e8e7;
+  height: 44px;
+  width: 100%;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.price-27-07/*, .price-11-08, .price-to-event*/ {
+  color: #c0c0c0;
+  text-decoration: line-through;
+}
+
+.schedule .table {
+  background-color: #FFFFFF;
+  color: #666666;
+}
+.schedule .table th {
+  font-weight: bold;
+}
+
+.schedule .table th,
+.schedule .table td {
+  vertical-align: middle;
+}
+
+.schedule .table .well {
+  text-align: center;
+}
+
+.schedule .speaker-theme small {
+  display: block;
+  margin-top: 4px;
+}
+
+.schedule .table .talk-block {
+  height: 115px;
+}
+
+.link-talk:hover {
+  text-decoration: none;
+}
+.stopped-sales {
+  color: #e67e22;
+}
+
+#location-map{
+  background: #fff;
+  border: none;
+  height: 540px;
+  width: 100%;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#location-map img {
+  max-width: initial;
+}
+
+.eventicket-iframe {
+  height: 340px;
+  width: 100%;
+}
+
+.eventicket-link {
+  display: none;
+}
+
+.ticket-hot-news {
+  color: #ECF0F1;
+  text-align: center;
+}
+
+#other-events .main-title {
+  margin-bottom: 30px;
+}
+
+#other-events .event-title {
+  color: #f0f0f0;
+  font-size: 20px;
+}
+
+#other-events .event-photo{
+  height: 160px;
+  margin: 0 0 8px 0;
+}
+
+#second-content {
+  color: #b0b0b0;
+  padding-top: 30px;
+}
+
+#execution .container {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 60px;
+}
+
+.support-list .support-item {
+  float: left;
+  margin: 0 12px 12px 0;
+}
+
+.support-list .support-item a {
+  display: block;
+}
+
+.events-link {
+  background: transparent no-repeat center;
+  display: block;
+  height: 160px;
+  text-indent: -99999px;
+}
+
+.events-link.startup-vale {
+  background-color: #7bbc0c;
+  background-image: url(../images/logo-startup-vale.png);
+}
+
+.events-link.agile {
+  background-color: #000033;
+  background-image: url(../images/logo-agile-vale.png);
+}
+
+.events-link img {
+  visibility: hidden;
+}
+
+#execution .event-owner {
+  display: block;
+  margin-top: 24px;
+  max-width: 200px;
+}
+
+.footer-copyright {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.box-registration{
+  height: 300px;
+}
+
+.rupy-modal {
+  border: 8px solid #35AEE7!important;
+  border-radius: 0px;
+}
+.modal-footer {
+  background-color: #ffffff !important;
+  text-align: left;
+}
+.title-modal {
+  color:red;
+}
+.text-modal {
+  color:#363636;
+}
+.modal-body .speaker-photo {
+  margin: 0 20px 0 0;
+}
+.modal-body .photo {
+  width: 160px;
+}
+.box-social-modal {
+  width: 135px;
+}
+
+@media (min-width: 1200px) {
+  .slogan {
+    font-size: 100px;
+    padding-left: 25px;
+    text-align: center;
+    margin-top:50px;
+  }
+
+  .slogan span {
+    line-height: 92px;
+  }
+
+  .slogan p.location {
+    font-size: 38px;
+    padding-top: 12px;
+  }
+
+  .jumbotron h1.logo {
+    background-image: url("../images/logo-rupy.png");
+  }
+
+  .jumbotron h1.logo, .slogan {
+    height: 350px;
+  }
+
+  #about-event .content{
+    padding-top: 40px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 979px) {
+  .jumbotron .span4, .jumbotron .span8 {
+    width: 100%;
+    float: none;
+  }
+
+  .slogan {
+    font-size: 34px;
+    border: none;
+    padding: 0;
+    text-align: center;
+    height: auto;
+  }
+
+  .slogan span {
+    display: inline;
+    line-height: 34px;
+  }
+
+  .slogan span.motto {
+    display: block;
+  }
+
+  .slogan p.location {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  .jumbotron h1.logo {
+    height: 200px;
+  }
+
+  #newsletter .row-fluid .span4,
+  #other-events .row-fluid .span8 {
+    margin: 0;
+  }
+
+  #other-events .events-link {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+  body {
+    padding: 0;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .slogan {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .slogan span {
+    line-height: 28px;
+  }
+
+  .slogan p.location {
+    margin-top: 25px;
+    font-size: 22px;
+  }
+
+  #other-events .events-link.agile {
+    margin-top: 80px;
+  }
+
+  #second-content.jumbotron {
+    padding-top: 0;
+  }
+
+  #execution .event-owner {
+   max-width: 300px;
+  }
+
+}
+
+
+
+@media (max-width: 613px){
+  #eventicket {
+    height: 538px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 490px) {
+  body {
+    min-height: 480px;
+  }
+
+  .jumbotron {
+    padding-top: 45px;
+  }
+
+  #first-content .jumbotron:first-child {
+    padding-top: 0;
+  }
+
+  .slogan {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .slogan span {
+    line-height: normal;
+  }
+
+  .slogan p.location {
+    font-size: 17px;
+  }
+  #speaker-area .speakers-item {
+    display: block;
+    float: none;
+    margin: 12px 0 0 0;
+  }
+  #speaker-area .speakers-item {
+    display: block;
+    float: none;
+    margin: 12px 0 0 0;
+  }
+
+  #schedule-of-speakers td,
+  #schedule-of-speakers th {
+    padding: 15px;
+  }
+
+  #location-map {
+    height: 200px;
+  }
+
+  .eventicket-iframe {
+    display: none;
+  }
+
+  .eventicket-link {
+    display: block;
+  }
+}
+@media (max-width: 320px) {
+  #schedule-of-speakers .schedule-time {
+    width: 10px;
+  }
+}

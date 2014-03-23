@@ -1,0 +1,16 @@
+{
+  "name": "rupy2013",
+  "version": "0.0.0",
+  "description": "rupy2013 =============",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/designa/13.rupy.com.br.git"
+  },
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-imagemin": "~0.2.1",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-bg-shell": "~2.1.0"
+  }
+}

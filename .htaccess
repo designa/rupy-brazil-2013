@@ -1,4 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine on
-RewriteCond %{http_host} ^www.rupy.com.br [NC]
-RewriteRule ^(.*)$ http://rupy.com.br/$1 [R=301,L]
