@@ -1,6 +1,6 @@
-# Rupy Brazil 2013
+# Landing Page Rupy Brazil 2013
 
-Site do evento [Rupy Brazil 2013](http://rupy.com.br)
+Landing Page do evento [Rupy Brazil 2013](http://rupy.com.br)
 
 ### Desenvolvimento
 
